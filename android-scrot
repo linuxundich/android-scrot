@@ -24,6 +24,11 @@ command -v adb >/dev/null 2>&1 || {
 	exit 1;
 }
 
+## Start adb server if necessary
+if [ ! $(pgrep adb) ]; then
+	adb start-server
+fi
+
 ## Timestamp
 TIME=$(date "+%d-%m-%Y_%H-%M-%S")
 

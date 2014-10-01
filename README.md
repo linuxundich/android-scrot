@@ -12,6 +12,9 @@ $ android-scrot
 android_12-02-2014_11-17-43.png saved
 $ android-scrot your-app
 your-app_12-02-2014_11-18-04.png saved
+$ android-scrot your-app.png
+your-app.png saved
+
 ```
 
 # Dependencies
